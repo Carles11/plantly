@@ -43,7 +43,7 @@ export default function NewScreen() {
       )
     }
 
-    addPlant(name, Number(days))
+    addPlant(name, Number(days), selectedImage)
     router.navigate('/')
   }
 
@@ -80,7 +80,7 @@ export default function NewScreen() {
       aspect: [1, 1],
       quality: 1
     })
-    console.log(JSON.stringify(imageResult, null, 2))
+
     if (!imageResult.canceled) {
       setSelectedImage(imageResult.assets[0].uri)
     }
@@ -157,6 +157,7 @@ const styles = StyleSheet.create({
     marginBottom: 8
   },
   centered: {
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: 24
   }
 })
