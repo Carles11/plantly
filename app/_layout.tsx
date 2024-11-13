@@ -1,5 +1,6 @@
-import { Stack } from 'expo-router'
+import { SplashScreen, Stack } from 'expo-router'
 
+// SplashScreen.preventAutoHideAsync()
 export default function Layout() {
   return (
     <Stack>
