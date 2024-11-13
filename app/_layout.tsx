@@ -3,9 +3,12 @@ import { useQuickActionRouting } from 'expo-quick-actions/router'
 import { SplashScreen, Stack } from 'expo-router'
 import { useEffect } from 'react'
 import { Platform } from 'react-native'
+
 // SplashScreen.preventAutoHideAsync()
+
 export default function Layout() {
   useQuickActionRouting()
+
   useEffect(() => {
     QuickActions.setItems([
       {
@@ -16,6 +19,7 @@ export default function Layout() {
       }
     ])
   }, [])
+
   return (
     <Stack>
       <Stack.Screen
