@@ -20,6 +20,8 @@ export default function PlantDetails() {
   )
   const navigation = useNavigation()
 
+  console.log({ params })
+
   useEffect(() => {
     navigation.setOptions({
       title: plant?.name
